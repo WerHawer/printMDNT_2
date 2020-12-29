@@ -3,7 +3,7 @@ import ModelBlock from "components/ModelBlock";
 import renderFile from "public/render.json";
 
 const elementsOnPage = 2;
-const max = Math.round(renderFile.products.length / elementsOnPage);
+const max = Math.floor(renderFile.products.length / elementsOnPage);
 
 const productsToRender = [];
 
