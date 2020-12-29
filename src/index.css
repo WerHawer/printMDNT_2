@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url("./public/fonts/HelveticaNeueCyr-Bold.woff") format("woff"),
+    url("./public/fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica medium";
+  src: url("./public/fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+    url("./public/fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+}
+
+:root {
+  --bold-font: "Helvetica Bold", Arial, Helvetica, sans-serif;
+  --normal-font: "Helvetica medium", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica medium", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app-wrapper {
+  width: 595px;
+  height: 842px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  padding: 32px 25px 22px 30px;
+}
+
+.header-wrapper {
+  display: flex;
+}
+
+.logo {
+  width: 88px;
+  height: 88px;
+  background: url("public/image/logo.svg");
+  margin-right: 13px;
+}
+
+.header__text-h2 {
+  font-family: var(--bold-font);
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 24px;
+}
+
+.header__text-contacts {
+  font-family: var(--bold-font);
+  font-style: 12px;
+}
+
+.big-photo__wrapper {
+  width: 219px;
+  height: 326px;
+  margin-right: 7px;
+}
+
+.big-photo {
+  height: 100%;
+}
+
+.text-contacts__element {
+  margin-right: 20px;
+}
+
+.small-photos__wrapper {
+  display: flex;
+}
+
+.small-photo__container {
+  width: 100px;
+  height: 150px;
+  margin-right: 7px;
+  overflow: hidden;
+}
+
+.small-photo__container:last-child {
+  margin-right: 0;
+}
+
+.small-photo {
+  height: 100%;
+}
+
+.model-block__wrapper {
+  display: flex;
+  margin-top: 24px;
+}
+
+.model-block__right-side {
+  max-height: 326px;
+}
+
+.info-text__wrapper {
+  padding-left: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 176px;
+}
+
+.info-text__model-name {
+  margin-bottom: 9px;
+}
+
+.info-text__model-info-list {
+  list-style: none;
+  flex: 1 0 auto;
+}
+
+.info-list__element--name,
+.info-text__b2b-price,
+.info-text__recommended-price {
+  font-family: var(--bold-font);
+  font-weight: 700;
+  line-height: 165%;
+}
+
+.info-text__recommended-price {
+  margin-bottom: 12px;
+}
+
+.recommended-price-name {
+  font-family: var(--normal-font);
+}
+
+@media print {
+  .app-wrapper {
+    page-break-before: always;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+}
