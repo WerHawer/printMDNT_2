@@ -47,7 +47,7 @@ body {
 .logo {
   width: 88px;
   height: 88px;
-  background: url("public/image/logo.svg");
+  /* background: url("public/image/logo.svg"); */
   margin-right: 13px;
 }
 
