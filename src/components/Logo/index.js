@@ -1,8 +1,8 @@
-import logoSrc from "public/image/logo.svg";
+import logoScr from "public/image/logo.jpg";
 
 const Logo = () => (
   <div className="logo">
-    <img src={logoSrc} alt="logo" width="88" height="88" />
+    <img src={logoScr} alt="logo" width="88" height="88" />
   </div>
 );
 
